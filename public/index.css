@@ -1,0 +1,140 @@
+.header{
+    display: flex;
+    justify-content: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: #6528F7;
+}
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.form-section form {
+    grid-row-start: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Bahnschrift SemiBold", "Courier New", monospace;
+    color: #6528F7;
+    flex: 2 1 1%;
+    font-size: large;
+    font-weight: bold;
+}
+.form-item {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.select {
+    font-size: 15px;
+}
+.form-section .error {
+    grid-row-start: auto;
+}
+.form-btn {
+    width: 30%;
+    left: 35%;
+    position: relative;
+    color: #fff;
+    background-color: #6528F7;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-family: "Bahnschrift", "Courier New", monospace ;
+    font-size: 100%;
+    font-weight: bold;
+}
+.form-btn:hover {
+    color: #6528F7;
+    background-color: #EFE1D1;
+    scale: 1.1;
+}
+select,
+.form-section input {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #6528F7;
+    border-style: dashed;
+}
+.form-section input:focus {
+    color: #fff;
+    background-color: #6528F7;
+}
+select option {
+    font-size: 13px;
+}
+.quiz-section {
+    position : relative ;
+    top: 0%;
+}
+.score {
+    font-family: "Consolas", "Courier New", monospace;
+    font-weight: bolder;
+}
+.quiz-form {
+    display: grid;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    right: 25%;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2,1fr 1fr);
+    margin-bottom: 20%;
+}
+.question {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    position: relative;
+    left: 15%;
+    font-family: "Verdana", "Courier New", monospace;
+}
+.answers {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.options {
+    grid-column: span 1;
+    grid-row: span 1;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: "Verdana", "Courier New", monospace;
+}
+.confirm-answer {
+    width: 90%;
+    position: relative;
+    left: 45%;
+    grid-column: span 2;
+    margin-top: 8%;
+    border: none;
+    border-radius: 7px;
+    font-family: "Verdana", "Courier New", monospace;
+    background-color: #6528F7;
+    height: 90%;
+    color: #fff;
+    font-size: medium;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6528F7;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+    font-family:  "Rockwell", "Courier New", monospace ;
+    font-size: large;
+}
+.indice {
+    color: red;
+    font-weight: bolder;
+    font-size: 80%;
+}
